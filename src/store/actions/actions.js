@@ -23,7 +23,7 @@ export const addTodo = (text) => {
 
 /**
  * 
- * @param {Number} text 
+ * @param {number} id 
  * @returns action TOGGLE_TODO
  */
 export const toggleTodo = (id) => {

@@ -5,18 +5,15 @@ import Todo from './Todo';
 const TodoList = ({todos, onTodoClick}) => {
     return (
         <div>
-            <h1>Tus Tareas</h1>
+            <h1>Your TODOs</h1>
             <ul>
                 {todos.map((todo, index) => 
                     (
                         <Todo 
                             key={index}
                             {...todo} // id, text, completed
-                            onClick = {
-                                () => onTodoClick(todo.id)
-                            }
+                            onClick={() => onTodoClick(todo.id)}
                         />
-
                     )
                 )}
 
@@ -36,7 +33,7 @@ TodoList.propTypes = {
             }
         ).isRequired
     ).isRequired,
-    onTodoClick: PropTypes.func.isRequired  
+    onTodoClick: PropTypes.func.isRequired       
 }
 
 export default TodoList;

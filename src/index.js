@@ -9,9 +9,10 @@ import { Provider } from 'react-redux';
 // Import Config Function of App Store
 import { createAppStore } from './store/config/storeConfig'
 
-let appStore = createAppStore();
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+let appStore = createAppStore();
 
 root.render(
   <Provider  store={appStore}>

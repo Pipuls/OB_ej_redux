@@ -21,7 +21,7 @@ export const todosReducer = (state=initialState, action) => {
                 (todo.id === action.payload.id)
                 ?
                 {
-                    ...todo,
+                    ...todo, 
                     completed: !todo.completed
                 }
                 :
